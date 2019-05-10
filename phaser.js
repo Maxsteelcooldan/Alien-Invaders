@@ -1,7 +1,7 @@
 const mainp = {}
 
 const config = {
-  type: Phaser.AUTO
+  type: Phaser.AUTO,
   width: 500,
   height:650,
   backgroundColor: #000000,
