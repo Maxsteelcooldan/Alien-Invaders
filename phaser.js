@@ -8,7 +8,7 @@ const config = {
   scene: {
     create,
     preload,
-    update:
+    update
   }
 }
 function create() {
