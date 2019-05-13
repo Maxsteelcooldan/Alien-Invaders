@@ -14,8 +14,9 @@ const config = {
   }
 }
 var game = new Phaser.Game(config);
-function create() {
-
+function create (){
+ 
+  mainp.main = this.add.sprite(100,100,'player');
 }
 function preload() {
 
@@ -26,6 +27,3 @@ function update() {
 
 var platforms;
 
-function create (){
-  mainp.main = this.add.sprite(100,100,'player');
-}
