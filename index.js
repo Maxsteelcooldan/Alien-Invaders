@@ -1,4 +1,4 @@
-const mainp = {}
+const player = {}
 
 const config = {
   type: Phaser.AUTO,
@@ -16,10 +16,10 @@ const config = {
 var game = new Phaser.Game(config);
 function create (){
  
-  mainp.main = this.add.sprite(100,100,'player');
+  player.main = this.add.sprite(100,100,'player');
 }
 function preload() {
-
+  this.load.image('player', 'alien.png')
 }
 function update() {
 
