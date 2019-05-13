@@ -2,8 +2,8 @@ const mainp = {}
 
 const config = {
   type: Phaser.AUTO,
-  width: 700,
-  height:450,
+  width: 450,
+  height:500,
   backgroundColor: '#000000',
   scene: {
     create,
