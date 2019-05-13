@@ -4,8 +4,8 @@ const config = {
   type: Phaser.AUTO,
   width: 450,
   height:600,
-  x: 200,
-  y: 00,
+  x: 00,
+  y: 200,
   backgroundColor: '#000000',
   scene: {
     create,
