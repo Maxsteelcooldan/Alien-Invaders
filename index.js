@@ -30,7 +30,7 @@ function update() {
   } else if (player.cursors.left.isDown || player.keyA.isDown) {
     player.main.x -= 5
   }
+}
 
-var platforms;
 
 
