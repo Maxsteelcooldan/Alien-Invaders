@@ -19,8 +19,6 @@ function create (){
   player.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
   player.cursors = this.input.keyboard.createCursorKeys();
   player.main = this.add.sprite(100,100,'player');
-  player.main.setCollideWorldBounds(true)
-}
 function preload() {
   this.load.image('player', 'alien.png')
 }
