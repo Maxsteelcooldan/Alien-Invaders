@@ -24,20 +24,21 @@ function preload() {
   this.load.image('player', 'alien.png')
 }
 function update() {
-  if(hero.cursors.right.isDown || hero.keyD.isDown) {
-    hero.main.x += 5
-  } else if (hero.cursors.left.isDown || hero.keyA.isDown) {
-    hero.main.x -= 5
-  } else if (hero.cursors.up.isDown || hero.keyW.isDown) {
-    hero.main.y -= 5
-  } if(hero.keyW.isDown && hero.keyA.isDown || hero.cursors.up.isDown && hero.cursors.left.isDown) {
-    hero.main.y -= 5;
-    hero.main.x -= 5;
-  } if(hero.keyW.isDown && hero.keyD.isDown || hero.cursors.up.isDown && hero.cursors.right.isDown) {
-    hero.main.y -= 5;
-    hero.main.x += 5;
+  if(player.cursors.right.isDown || player.keyD.isDown) {
+    player.main.x += 5
+  } else if (player.cursors.left.isDown || player.keyA.isDown) {
+    player.main.x -= 5
+  } else if (player.cursors.up.isDown || player.keyW.isDown) {
+    player.main.y -= 5
+  } if(player.keyW.isDown && player.keyA.isDown || player.cursors.up.isDown && player.cursors.left.isDown) {
+    player.main.y -= 5;
+    player.main.x -= 5;
+  } if(player.keyW.isDown && player.keyD.isDown || player.cursors.up.isDown && player.cursors.right.isDown) {
+    player.main.y -= 5;
+    player.main.x += 5;
   }
 }
 
 var platforms;
+
 
