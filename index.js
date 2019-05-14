@@ -7,25 +7,35 @@ const config = {
   x: 00,
   y: 200,
   backgroundColor: '#000000',
-  scene: {
+  scene: 
+  {
     create,
     preload,
     update
   }
 }
 var game = new Phaser.Game(config);
-function create (){
+function preload() 
+{
+  this.load.image('player', 'alien.png')
+}
+
+function create ()
+{
   player.keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
   player.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
   player.cursors = this.input.keyboard.createCursorKeys();
   player.main = this.add.sprite(100,100,'player');
-function preload() {
-  this.load.image('player', 'alien.png')
+  player.main.setCollideWorldBounds(true);
 }
+
 function update() {
-  if(player.cursors.right.isDown || player.keyD.isDown) {
+  if(player.cursors.right.isDown || player.keyD.isDown) 
+  {
     player.main.x += 5
-  } else if (player.cursors.left.isDown || player.keyA.isDown) {
+  } 
+  else if (player.cursors.left.isDown || player.keyA.isDown) 
+  {
     player.main.x -= 5
   }
 }
