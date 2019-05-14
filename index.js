@@ -29,6 +29,3 @@ function update() {
     player.main.x -= 5
   }
 }
-
-
-
