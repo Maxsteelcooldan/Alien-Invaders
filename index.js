@@ -22,11 +22,10 @@ function preload()
 
 function create ()
 {
-  player.main = this.physics.add.sprite(200,200, 'alien')
+  player.main = this.physics.add.sprite(200,200, '[player]')
   player.keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
   player.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
   player.cursors = this.input.keyboard.createCursorKeys();
-  player.main = this.add.sprite(100,100,'player');
   player.main.setCollideWorldBounds(true);
 }
 
