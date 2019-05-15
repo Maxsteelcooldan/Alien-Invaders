@@ -37,7 +37,7 @@ function create ()
   player.cursors = this.input.keyboard.createCursorKeys();
   player.main.setCollideWorldBounds(true);
   player.main.setScale(2)
-  scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '24px', fill: '#fff' });
+  scoreText = this.add.text(16, 16, 'Score: 0', { fontSize: '18px', fill: '#fff' });
 }
 
 function update() {
