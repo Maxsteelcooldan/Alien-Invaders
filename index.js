@@ -33,7 +33,7 @@ function create ()
   player.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
   player.cursors = this.input.keyboard.createCursorKeys();
   player.main.setCollideWorldBounds(true);
-  player.main.setScale(5)
+  player.main.setScale(2)
 }
 
 function update() {
