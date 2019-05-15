@@ -31,7 +31,7 @@ function preload()
 
 function create ()
 {
-  player.main = this.physics.add.sprite(250,500, 'player');
+  player.main = this.physics.add.sprite(235,500, 'player');
   player.keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
   player.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
   player.cursors = this.input.keyboard.createCursorKeys();
