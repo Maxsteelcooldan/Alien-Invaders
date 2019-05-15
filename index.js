@@ -28,11 +28,12 @@ function preload()
 
 function create ()
 {
-  player.main = this.physics.add.sprite(200,200, 'player');
+  player.main = this.physics.add.sprite(200,500, 'player');
   player.keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
   player.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
   player.cursors = this.input.keyboard.createCursorKeys();
   player.main.setCollideWorldBounds(true);
+  player.main.setScale(5)
 }
 
 function update() {
