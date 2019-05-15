@@ -7,10 +7,16 @@ const config = {
   x: 00,
   y: 200,
   backgroundColor: '#000000',
+  physics: {default: 'arcade',
+    arcade: {
+      gravity: { y:200 },
+      enableBody: true,
+    }
+  },
   scene: 
   {
-    create,
     preload,
+    create,
     update
   }
 }
@@ -22,7 +28,7 @@ function preload()
 
 function create ()
 {
-  player.main = this.physics.add.sprite(200,200, '[player]')
+  player.main = this.physics.add.sprite(200,200, 'player');
   player.keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
   player.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
   player.cursors = this.input.keyboard.createCursorKeys();
