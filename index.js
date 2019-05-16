@@ -52,12 +52,12 @@ function update() {
   {
     player.main.y = 590
   }
-  if(player.main.y = 450) 
+  if(player.main.x = 450) 
   {
-    player.main.y = 450
+    player.main.x = 450
   }
-  else if (player.main.y = 0) 
+  else if (player.main.x = 0) 
   {
-    player.main.y = 0
+    player.main.x = 0
   }
 }
