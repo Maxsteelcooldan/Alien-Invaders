@@ -37,6 +37,10 @@ function create ()
   player.cursors = this.input.keyboard.createCursorKeys();
   player.main.setScale(2)
   scoreText = this.add.text(16, 16, 'Score: 0', { fontSize: '18px', fill: '#fff' });
+  if(player.main.y = 550)
+  {
+    player.main.y = 550
+  }
 }
 
 function update() {
@@ -47,9 +51,5 @@ function update() {
   else if (player.cursors.left.isDown || player.keyA.isDown) 
   {
     player.main.x -= 5
-  }
-  if(player.main.y = 600)
-  {
-    player.main.y = 600
   }
 }
