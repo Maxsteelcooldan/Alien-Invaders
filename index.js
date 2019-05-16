@@ -35,7 +35,6 @@ function create ()
   player.keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
   player.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
   player.cursors = this.input.keyboard.createCursorKeys();
-  player.main.setCollideWorldBounds(true);
   player.main.setScale(2)
   scoreText = this.add.text(16, 16, 'Score: 0', { fontSize: '18px', fill: '#fff' });
 }
@@ -48,5 +47,9 @@ function update() {
   else if (player.cursors.left.isDown || player.keyA.isDown) 
   {
     player.main.x -= 5
+  }
+  if(player.main.x = 425)
+  {
+    player.main.x = 425
   }
 }
