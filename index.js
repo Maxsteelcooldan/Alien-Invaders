@@ -48,8 +48,8 @@ function update() {
   {
     player.main.x -= 5
   }
-  if(player.main.x = 450)
+  if(player.main.y = 450)
   {
-    player.main.x = 450
+    player.main.y = 450
   }
 }
