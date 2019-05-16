@@ -31,16 +31,12 @@ function preload()
 
 function create ()
 {
-  player.main = this.physics.add.sprite(235,500, 'player');
+  player.main = this.add.sprite(235,500, 'player');
   player.keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
   player.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
   player.cursors = this.input.keyboard.createCursorKeys();
   player.main.setScale(2)
   scoreText = this.add.text(16, 16, 'Score: 0', { fontSize: '18px', fill: '#fff' });
-  if(player.main.y = 550)
-  {
-    player.main.y = 550
-  }
 }
 
 function update() {
@@ -51,5 +47,9 @@ function update() {
   else if (player.cursors.left.isDown || player.keyA.isDown) 
   {
     player.main.x -= 5
+  }
+  if(player.main.y = 550)
+  {
+    player.main.y = 550
   }
 }
