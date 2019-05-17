@@ -36,6 +36,7 @@ function create ()
   player.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
   player.cursors = this.input.keyboard.createCursorKeys();
   player.main.setScale(2)
+  player.main.setCollideWorldBounds(true);
   scoreText = this.add.text(16, 16, 'Score: 0', { fontSize: '18px', fill: '#fff' });
 }
 
@@ -47,9 +48,5 @@ function update() {
   else if (player.cursors.left.isDown || player.keyA.isDown) 
   {
     player.main.x -= 5
-  }
-  if(player.main.y = 590)
-  {
-    player.main.y = 590
   }
 }
