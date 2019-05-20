@@ -40,6 +40,11 @@ function create ()
   player.main.setScale(2)
   player.main.setCollideWorldBounds(true);
   scoreText = this.add.text(16, 16, 'Score: 0', { fontSize: '18px', fill: '#fff' });
+  
+  function shoot(x,y,'bullet') {
+    this.y += 10
+    this.x += 5
+  }
 }
 
 function update() {
@@ -53,7 +58,7 @@ function update() {
   } 
   if(player.keyspace.isDown) 
   {
-    var shoot = this.add.image(player.x, player.y - 10,'bullet')
+    shoot(100,100,'bullet')
   }
 }
 
