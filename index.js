@@ -32,9 +32,6 @@ function preload()
 
 function create ()
 {
-  function shoot() {
-    this.add.image(10, 20,'bullet')
-  }
   player.main = this.physics.add.sprite(235,500, 'player');
   player.keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
   player.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
@@ -56,7 +53,7 @@ function update() {
   } 
   if(player.keyspace.isDown) 
   {
-    shoot()
+    this.add.image(10, 20,'bullet')
   }
 }
 
