@@ -53,7 +53,7 @@ function update() {
   } 
   if(player.keyspace.isDown) 
   {
-    this.add.image(10, 20,'bullet')
+    this.add.image(player.x, player.y - 10,'bullet')
   }
 }
 
