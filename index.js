@@ -27,13 +27,18 @@ var game = new Phaser.Game(config);
 function preload() 
 {
   this.load.image('player', 'alien.png')
+  this.load.image('bullet', 'bullet.png')
 }
 
 function create ()
 {
+  function shoot() {
+    this.add.image(10, 20,'bullet')
+  }
   player.main = this.physics.add.sprite(235,500, 'player');
   player.keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
   player.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
+  player.keyspace = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE)
   player.cursors = this.input.keyboard.createCursorKeys();
   player.main.setScale(2)
   player.main.setCollideWorldBounds(true);
@@ -48,6 +53,10 @@ function update() {
   else if (player.cursors.left.isDown || player.keyA.isDown) 
   {
     player.main.x -= 5
+  } 
+  if(player.keyspace.isDown) 
+  {
+    
   }
 }
 
