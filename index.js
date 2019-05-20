@@ -56,7 +56,7 @@ function update() {
   } 
   if(player.keyspace.isDown) 
   {
-    
+    shoot()
   }
 }
 
